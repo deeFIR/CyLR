@@ -169,6 +169,7 @@ namespace CyLR
                     staticPaths.Add(@"%SYSTEMROOT%\SchedLgU.Txt");
                     staticPaths.Add(@"%SYSTEMROOT%\inf\setupapi.dev.log");
                     staticPaths.Add(@"%SYSTEMROOT%\System32\drivers\etc\hosts");
+                    staticPaths.Add(@"%SYSTEMROOT%\System32\config\DEFAULT");
                     staticPaths.Add(@"%SYSTEMROOT%\System32\config\SAM");
                     staticPaths.Add(@"%SYSTEMROOT%\System32\config\SYSTEM");
                     staticPaths.Add(@"%SYSTEMROOT%\System32\config\SOFTWARE");
