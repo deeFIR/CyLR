@@ -155,6 +155,8 @@ namespace CyLR
                     string systemRoot = Environment.ExpandEnvironmentVariables("%SYSTEMROOT%");
                     string programData = Environment.ExpandEnvironmentVariables("%PROGRAMDATA%");
                     string systemDrive = Environment.ExpandEnvironmentVariables("%SystemDrive%");
+                    string programFilesx86 = Environment.ExpandEnvironmentVariables("%ProgramFiles(x86)%");
+                    
                     globPaths.Add(Glob.Parse(systemRoot + @"\Tasks\**"));
                     globPaths.Add(Glob.Parse(systemRoot + @"\Prefetch\**"));
                     globPaths.Add(Glob.Parse(systemRoot + @"\System32\sru\**"));
@@ -168,6 +170,7 @@ namespace CyLR
                     
                     globPaths.Add(Glob.Parse(programData + @"\ScreenConnect Client*\**"));  /// ScreenConnect/ConnectWise config
                     globPaths.Add(Glob.Parse(systemRoot + @"\Temp\ScreenConnect\**"));      /// setup
+                    globPaths.Add(Glob.Parse(programFilesx86 + @"\ScreenConnect*\**"));     /// application configuration
                     
                     staticPaths.Add(@"%SYSTEMROOT%\SchedLgU.Txt");
                     staticPaths.Add(@"%SYSTEMROOT%\inf\setupapi.dev.log");
