@@ -182,6 +182,7 @@ User Profiles (ie `C:\Users\*`):
 * `C:\Users\*\AppData\Roaming\Mozilla\Firefox\Profiles\**`
 * `C:\Users\*\AppData\Local\Microsoft\Windows\WebCache\**`
 * `C:\Users\*\AppData\Local\Microsoft\Windows\Explorer\**`
+* `C:\Users\*\AppData\Local\Microsoft\Windows\Notifications\**`
 * `C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat`
 * `C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat.LOG1`
 * `C:\Users\*\AppData\Local\Microsoft\Windows\UsrClass.dat.LOG2`
