@@ -19,7 +19,7 @@ namespace CyLRTests.archive
             //Zip up some data
             var testData = Encoding.Unicode.GetBytes(entryData);
             var testFileData = new MemoryStream(testData);
-            CyLR.archive.File file = new CyLR.archive.File(entryName, testFileData, new DateTime());
+            CyLR.archive.File file = new CyLR.archive.File(entryName, testFileData);
             var zipFile = CreateZipArchive(new[] { file }, "","3");
 
             //Unzip that data
@@ -44,7 +44,7 @@ namespace CyLRTests.archive
             //Zip up some data
             var testData = Encoding.Unicode.GetBytes(entryData);
             var testFileData = new MemoryStream(testData);
-            CyLR.archive.File file = new CyLR.archive.File(entryName, testFileData, new DateTime());
+            CyLR.archive.File file = new CyLR.archive.File(entryName, testFileData);
             var zipFile = CreateZipArchive(new[] { file }, archivePassword, archiveCompressionLevel);
 
             //Unzip that data
