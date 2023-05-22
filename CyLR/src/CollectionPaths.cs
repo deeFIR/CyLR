@@ -166,6 +166,9 @@ namespace CyLR
                     globPaths.Add(Glob.Parse(systemDrive + @"\$Recycle.Bin\**\$I*"));
                     globPaths.Add(Glob.Parse(systemDrive + @"\$Recycle.Bin\$I*"));
                     
+                    globPaths.Add(Glob.Parse(programData + @"\ScreenConnect Client*\**"));  /// ScreenConnect/ConnectWise config
+                    globPaths.Add(Glob.Parse(systemRoot + @"\Temp\ScreenConnect\**"));      /// setup
+                    
                     staticPaths.Add(@"%SYSTEMROOT%\SchedLgU.Txt");
                     staticPaths.Add(@"%SYSTEMROOT%\inf\setupapi.dev.log");
                     staticPaths.Add(@"%SYSTEMROOT%\System32\drivers\etc\hosts");
@@ -207,7 +210,7 @@ namespace CyLR
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Roaming\Mozilla\Firefox\Profiles\**"));
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\ConnectedDevicesPlatform\**"));
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Microsoft\Windows\Explorer\**"));
-                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Microsoft\Windows\Notifications\**"));
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Microsoft\Windows\Notifications\**")); /// Windows 10+ systray notifications
 
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT");
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT.LOG1");
