@@ -530,6 +530,11 @@ Windows operating systems. The following operating systems were tested against:
 
 To build CyLR yourself, follow the below steps:
 
+Requirements to build on Windows 10;
+
+Framework: 'Microsoft.NETCore.App', version '3.1.32' (x64)
+https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=3.1.32&arch=x64&rid=win10-x64
+
 1. Install dotnet core on your platform
 1. Clone this repository
 1. Run the following scripts in order:
