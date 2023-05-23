@@ -216,7 +216,11 @@ namespace CyLR
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\ConnectedDevicesPlatform\**"));
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Microsoft\Windows\Explorer\**"));
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Microsoft\Windows\Notifications\**")); /// Windows 10+ systray notifications
-
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Google\Chrome\User Data\Default\Platform Notifications\**")); /// Chrome user notifications
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Platform Notifications\**")); /// Brave Browser user notifications
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Microsoft\Edge\User Data\Default\Platform Notifications\**")); /// Edge user notifications
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Vivaldi\User Data\Default\Platform Notifications\**")); /// Vivaldi user notifications
+                        
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT");
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT.LOG1");
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT.LOG2");
