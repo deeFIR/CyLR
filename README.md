@@ -159,6 +159,7 @@ System Root (ie `C:\Windows`):
 * `%SYSTEMROOT%\System32\config\SOFTWARE.LOG2`
 * `%SYSTEMROOT%\System32\config\SECURITY.LOG2`
 * `%SYSTEMROOT%\System32\config\SOFTWARE.LOG2`
+* `%SYSTEMROOT%\System32\config\systemprofile\AppData\Local\Microsoft\Windows\Notifications\**`
 
 Program Data (ie `C:\ProgramData`):
 
