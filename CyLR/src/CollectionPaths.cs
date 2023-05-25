@@ -160,6 +160,7 @@ namespace CyLR
                     globPaths.Add(Glob.Parse(systemRoot + @"\Tasks\**"));
                     globPaths.Add(Glob.Parse(systemRoot + @"\Prefetch\**"));
                     globPaths.Add(Glob.Parse(systemRoot + @"\System32\sru\**"));
+                    globPaths.Add(Glob.Parse(systemRoot + @"\System32\wbem/Repository\**")); /// WMI event repository
                     globPaths.Add(Glob.Parse(systemRoot + @"\System32\winevt\Logs\**"));
                     globPaths.Add(Glob.Parse(systemRoot + @"\System32\Tasks\**"));
                     globPaths.Add(Glob.Parse(systemRoot + @"\System32\LogFiles\W3SVC1\**"));
