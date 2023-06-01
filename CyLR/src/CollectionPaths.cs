@@ -156,6 +156,7 @@ namespace CyLR
                     string programData = Environment.ExpandEnvironmentVariables("%PROGRAMDATA%");
                     string systemDrive = Environment.ExpandEnvironmentVariables("%SystemDrive%");
                     string programFilesx86 = Environment.ExpandEnvironmentVariables("%ProgramFiles(x86)%");
+                    string programFiles = Environment.ExpandEnvironmentVariables("%ProgramFiles%");
                     
                     globPaths.Add(Glob.Parse(systemRoot + @"\Tasks\**"));
                     globPaths.Add(Glob.Parse(systemRoot + @"\Prefetch\**"));
@@ -174,6 +175,9 @@ namespace CyLR
                     globPaths.Add(Glob.Parse(programData + @"\ScreenConnect Client*\**"));  /// ScreenConnect/ConnectWise config
                     globPaths.Add(Glob.Parse(systemRoot + @"\Temp\ScreenConnect\**"));      /// setup
                     globPaths.Add(Glob.Parse(programFilesx86 + @"\ScreenConnect*\**"));     /// application configuration
+                    
+                    globPaths.Add(Glob.Parse(programFiles + @"\TeamViewer\**"));   /// TeamViewer full logs
+                    globPaths.Add(Glob.Parse(programFilesx86 + @"\TeamViewer\**")); /// TeamViewer full logs
                     
                     staticPaths.Add(@"%SYSTEMROOT%\SchedLgU.Txt");
                     staticPaths.Add(@"%SYSTEMROOT%\inf\setupapi.dev.log");
@@ -221,6 +225,8 @@ namespace CyLR
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Platform Notifications\**")); /// Brave Browser user notifications
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Microsoft\Edge\User Data\Default\Platform Notifications\**")); /// Edge user notifications
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Vivaldi\User Data\Default\Platform Notifications\**")); /// Vivaldi user notifications
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Roaming\TeamViewer\**)); /// TeamViewer QuickSupport logs
+                        
                         
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT");
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT.LOG1");
