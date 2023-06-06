@@ -225,7 +225,7 @@ namespace CyLR
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\BraveSoftware\Brave-Browser\User Data\Default\Platform Notifications\**")); /// Brave Browser user notifications
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Microsoft\Edge\User Data\Default\Platform Notifications\**")); /// Edge user notifications
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Vivaldi\User Data\Default\Platform Notifications\**")); /// Vivaldi user notifications
-                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Roaming\TeamViewer\**)); /// TeamViewer QuickSupport logs
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Roaming\TeamViewer\**")); /// TeamViewer QuickSupport logs
                         
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Google\Chrome\User Data\Default\Extension Rules\**")); /// Google chrome extensions
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Google\Chrome\User Data\Default\Extension State\**")); ///
