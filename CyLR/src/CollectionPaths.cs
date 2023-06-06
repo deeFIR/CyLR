@@ -227,6 +227,10 @@ namespace CyLR
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Vivaldi\User Data\Default\Platform Notifications\**")); /// Vivaldi user notifications
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Roaming\TeamViewer\**)); /// TeamViewer QuickSupport logs
                         
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Google\Chrome\User Data\Default\Extension Rules\**")); /// Google chrome extensions
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Google\Chrome\User Data\Default\Extension State\**")); ///
+                        globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Google\Chrome\User Data\Default\Extensions\**")); ///
+                        
                         
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT");
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT.LOG1");
