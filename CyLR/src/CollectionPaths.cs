@@ -231,6 +231,7 @@ namespace CyLR
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Google\Chrome\User Data\Default\Extension State\**")); ///
                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\Google\Chrome\User Data\Default\Extensions\**")); ///
                         
+                         globPaths.Add(Glob.Parse($@"{user.ProfilePath}\AppData\Local\BraveSoftware\Brave-Browser\User Data\**")); /// Brave browser data                        
                         
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT");
                         staticPaths.Add($@"{user.ProfilePath}\NTUSER.DAT.LOG1");
